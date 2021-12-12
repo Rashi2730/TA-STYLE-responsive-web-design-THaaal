@@ -200,17 +200,41 @@ i{
 /* Mobile View */
 
 
+
+
+@media screen and (max-width: 1200px){
+
+    .container{
+        max-width: 1140px;
+    }    
+}
+@media screen and (max-width: 992px){
+
+    .container{
+        max-width: 960px;
+    }    
+}
+
 @media screen and (max-width:768px){
     
+
+
+
+    .container{
+        max-width: 720px;
+    }    
     html {
         font-size: 10px;
     }
-    .flex {
+    .wrap {
         flex-wrap: wrap;
     }
-    .flex30, .flex48 {
+    .flex100 {
         flex: 0 1 100%;
         margin: 1.5rem 0;
+    }
+    .order-1{
+        order: 1;
     }
     .column {
         flex-direction: column;
