@@ -1,0 +1,438 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* General  */
+
+
+*,
+* ::before, 
+* ::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+
+
+/* Color Variables*/
+
+:root {
+    --primary-color: rgb(249,35,77);
+    --secondary-color: rgb(23 39 63);
+    --text-white: #ffff;
+    --text-black: rgb(88, 80, 80);
+}
+
+
+
+
+/* Container */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+
+/* flex */
+
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex60 {
+    flex: 0 1 60%;
+}
+.flex42 {
+    flex: 0 1 42%;
+}
+.flex30 {
+    flex: 0 1 30%;
+}
+.flex45 {
+    flex: 0 1 45%;
+}
+.flex20 {
+    flex: 0 1 20%;
+}
+.flex-side {
+    display: flex;
+    flex-direction: column;
+}
+.flex-schedule {
+    flex-direction: row;
+    
+}
+
+/* Extras  */
+
+
+a {
+    color: var(--text-white);
+}
+.padding {
+    padding: 60px 0;
+}
+.item-center {
+    text-align: center;
+}
+.item-left {
+    text-align: left;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.full-width {
+    width: 100%;
+}
+
+
+
+/* Headings */
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--text-white);
+    font-weight: 800;
+    padding: 2rem 0;
+}
+h1 span {
+    color: var(--primary-color);
+}
+h2, h3, h4 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 900;
+    padding: 1rem 0;
+}
+h4 {
+    font-size: 1rem;
+}
+h3 {
+    font-size: 1.25rem;
+    padding: 0.50rem 0;
+}
+p{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--text-black);
+}
+
+
+
+
+
+
+
+
+/* Buttons */
+
+.butn {
+    height: 32px;
+    width: 110px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    padding: 0 25px;
+    border: none;
+    margin-top: 0.75rem;
+    font-size: 0.90rem;
+    text-decoration: none;
+}
+.sec-btn {
+    padding: 8px 25px;
+}
+
+
+
+
+
+
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(rgba(54, 43, 177, 0.811), rgba(54, 43, 177, 0.811)) ,url(../assets/banner.png), no-repeat;
+    background-size: cover;
+}
+.hero p{
+    color: var(--text-white);
+}
+
+
+/* Header Section */
+
+
+header {
+    padding: 20px 0;
+}
+header a{
+    text-decoration: none;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.menu li {
+    font-size: 0.90rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.menu li a:hover, .news a:hover, .news a.active{
+    color: var(--primary-color);
+}
+
+
+
+
+/* About Section */
+
+.about {
+    padding-top: 6rem;
+}
+
+
+
+/* Join Section  */
+
+.join, .icons, .news {
+    background-color: #DFECFF;
+}
+.join p{
+    font-size: 0.86rem;
+}
+.box1, .box2, .box3 {
+    border: 3px dashed var(--primary-color);
+    padding: 0 1rem;
+    height: 180px;
+    position: relative;
+}
+.num1, .num2, .num3 {
+    display: inline-block;
+    color: var(--primary-color);
+    background-color: #DFECFF;
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 28px;
+    height: 30px;
+    position: absolute;
+    top: -25px;
+    left: 30px;
+}
+
+
+
+/* Schedule Section */
+
+
+.s1, .s2 {
+    display: inline-block;
+    color: var(--text-white);
+    background-color: var(--primary-color);
+    font-weight: 900;
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+}
+.s2 {
+    background-color: var(--text-white);
+    color: var(--primary-color);
+    border: 2px dashed var(--primary-color);
+}
+.line {
+    width: 0;
+    height: 80px;
+    border: 1.5px dashed var(--primary-color);
+    margin-left: 2.5rem;
+}
+.schedule {
+    padding-top: 40px;
+}
+.schedule img{
+    height: 120px;
+    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.content {
+    margin-left: 4rem;
+
+}
+.content p {
+    font-size: 0.90rem;
+}
+
+
+
+
+
+/* Icon-Bar Section */
+
+
+.icons  {
+    padding: 80px 60px 40px 60px;
+}
+.icons p{
+    color: black;
+}
+.icons img {
+    padding-top: 20px;
+}
+.title{
+    font-size: 1rem;
+    font-weight: 800;
+}
+.num {
+    font-size: 30px;
+    font-weight: 900;
+}
+.idea {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+
+
+/* Banner */
+
+
+.banner {
+    position: relative;
+}
+.banner img{
+    border-radius: 40px;
+}
+.play i{
+    color: var(--primary-color);
+    font-size: 3rem;
+    padding: 1rem 1.50rem;
+}
+.play {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--text-white);
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+
+
+
+
+/*  News  Section  */
+
+.news p{
+    font-size: 0.90rem;
+}
+.news a{
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+
+
+/* Footer  */
+
+
+.footer1 {
+    background-color: rgb(35,52,123);
+}
+.footer1 h4 {
+    color: var(--text-white);
+}
+.footer1 li a{
+    text-decoration: none;
+    padding: 0 1rem;
+    color: rgba(180, 180, 180, 0.57);
+    font-style: 700;
+}
+.social{
+    margin-right: 4rem;
+}
+.social i{
+    font-size: 1.25rem;
+    color: rgba(245, 245, 245, 0.732);
+    padding: 0 1rem;
+}
+.footer2 {
+    background-color: rgb(16,33,105);
+    padding: 1rem 0;
+}
+small{
+    font-size: 0.75rem;
+    color: rgba(180, 180, 180, 0.57);
+}
+
+
+
+/* Mobile View */
+
+
+
+
+
+
+
